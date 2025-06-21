@@ -41,9 +41,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    /* ------------------------ */
-    display: none;
 }
 
 .userInfo {
@@ -97,6 +94,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    /* This section is initially hidden */
+    display: none;
 }
 
 .shareSection {
