@@ -2,6 +2,9 @@
 const lightIcon = document.getElementById('lightIcon');
 const darkIcon = document.getElementById('darkIcon');
 
+const bottomSection = document.getElementById('bottomSection');
+const socialMediaSection = document.getElementById('socialMediaSection');
+
 function main() {
     console.log("Main is playing");
     console.log(lightIcon);
@@ -12,11 +15,13 @@ function main() {
 
 function setEventListeners() {
     lightIcon.addEventListener('click', (event) => {
-        console.log("light icon was clicked");
+        bottomSection.style.display = 'none';
+        socialMediaSection.style.display = 'flex';
     });
     
     darkIcon.addEventListener('click', (event) => {
-        console.log("dark icon was clicked");
+        bottomSection.style.display = 'flex';
+        socialMediaSection.style.display = 'none';
     })
 }
 
