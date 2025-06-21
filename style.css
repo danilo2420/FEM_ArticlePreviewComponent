@@ -41,6 +41,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    /* ------------------------ */
+    display: none;
 }
 
 .userInfo {
@@ -81,4 +84,29 @@ body {
 
 .icon {
     width: 15px;
+}
+
+/* Share section */
+
+.socialMedia {
+    padding: 22px 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--grey900);
+}
+
+.shareSection {
+    border: solid red 2px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.shareText {
+    color: var(--grey400);
+}
+
+.shareIcons {
+    display: flex;
+    gap: 16px;
 }
