@@ -15,14 +15,26 @@ function main() {
 
 function setEventListeners() {
     lightIcon.addEventListener('click', (event) => {
-        bottomSection.style.display = 'none';
-        socialMediaSection.style.display = 'flex';
+        if (screen.width < 650) {
+            bottomSection.style.display = 'none';
+            socialMediaSection.style.display = 'flex';
+        } else {
+
+        }
+
+        
     });
     
     darkIcon.addEventListener('click', (event) => {
-        bottomSection.style.display = 'flex';
-        socialMediaSection.style.display = 'none';
+        if (screen.width < 650) {
+            bottomSection.style.display = 'flex';
+            socialMediaSection.style.display = 'none';
+        }
     })
+}
+
+function resize() {
+    // I'll have to do stuff here so that things don't get messed up
 }
 
 main();
