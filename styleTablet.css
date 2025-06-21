@@ -1,0 +1,25 @@
+@import 'style.css';
+
+@media (min-width: 650px) {
+    body {
+        border: solid 2px orange;
+    }
+
+    .container {
+        margin: 20px 80px;
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+
+    .image {
+        height: 100%;
+
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .content {
+
+    }
+}
