@@ -93,10 +93,13 @@ body {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: var(--grey900);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .shareSection {
-    border: solid red 2px;
     display: flex;
     align-items: center;
     gap: 24px;
@@ -109,4 +112,12 @@ body {
 .shareIcons {
     display: flex;
     gap: 16px;
+}
+
+.darkIconContainer {
+    background-color: var(--grey500);
+}
+
+.darkIcon {
+    color: white;
 }
