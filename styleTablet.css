@@ -24,7 +24,7 @@
     }
 
     .iconContainer {
-    position: relative;
+        position: relative;
     }
 
     .popUp {
@@ -40,6 +40,9 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        /* Initially invisible */ 
+        display: none;
     }
 
     .shareIcon {

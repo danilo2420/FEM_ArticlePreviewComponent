@@ -4,6 +4,9 @@ const darkIcon = document.getElementById('darkIcon');
 
 const bottomSection = document.getElementById('bottomSection');
 const socialMediaSection = document.getElementById('socialMediaSection');
+const popUp = document.getElementById('popUp');
+
+const iconImage = document.getElementById('iconImage');
 
 function main() {
     console.log("Main is playing");
@@ -19,10 +22,8 @@ function setEventListeners() {
             bottomSection.style.display = 'none';
             socialMediaSection.style.display = 'flex';
         } else {
-
+            toggleLightIcon();
         }
-
-        
     });
     
     darkIcon.addEventListener('click', (event) => {
@@ -31,6 +32,21 @@ function setEventListeners() {
             socialMediaSection.style.display = 'none';
         }
     })
+}
+
+let b = true;
+function toggleLightIcon() {
+    lightIcon.classList.toggle('darkIconContainer');
+
+    if (b) {
+        iconImage.src = 'images/icon-share-white.svg';
+        popUp.style.display = 'flex';
+    } else {
+        iconImage.src = 'images/icon-share.svg';
+        popUp.style.display = 'none';
+    }
+
+    b = !b;
 }
 
 function resize() {

@@ -121,3 +121,11 @@ body {
 .darkIcon {
     color: white;
 }
+
+.iconDark {
+    display: none;
+}
+
+.popUp {
+    display: none;
+}
