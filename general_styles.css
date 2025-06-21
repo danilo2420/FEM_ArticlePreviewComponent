@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* Variables */
+:root {
+    /* Colors */
+    --white: #FFF;
+    --grey900: #48556A;
+    --grey500: #6E8098;
+    --grey400: #9DAEC2;
+    --grey200: #ECF2F8;
+    
+    /* Spacing */
+    --spacing-0: 0px;
+    --spacing-200: 16px;
+    --spacing-300: 24px;
+    --spacing-400: 32px;
+    --spacing-500: 40px;
+    --spacing-600: 48px;
+    --spacing-700: 56px;
+    --spacing-800: 64px;
+    --spacing-1300: 104px;
+    --spacing-2000: 160px;
+}
+
+/* General */
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Typography */
+
+.typography1 {
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.25px;
+}
+
+.typography2--bold {
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 140%;
+    letter-spacing: 0.12%;
+}
+
+.typography2--medium {
+    font-family: Manrope;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 140%;
+    letter-spacing: 0.12%;
+}
+
+.typography3 {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 400%;
+    letter-spacing: 25%;
+}

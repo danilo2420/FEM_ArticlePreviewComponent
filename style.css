@@ -1,0 +1,19 @@
+@import 'general_styles.css';
+
+body {
+    background-color: var(--grey200);
+}
+
+.container {
+    border: solid blue 2px;
+    width: 87%;
+    margin-top: 64px;
+}
+
+.image {
+    background-image: url('images/drawers.jpg');
+    background-size: cover;
+    background-position: center;
+
+    height: 200px;
+}
