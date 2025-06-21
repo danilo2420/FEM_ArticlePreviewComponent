@@ -5,9 +5,11 @@ body {
 }
 
 .container {
-    border: solid blue 2px;
     width: 87%;
     margin-top: 64px;
+    border-radius: 10px;
+
+    box-shadow: 0px 40px 40px #C9D5E1;
 }
 
 .image {
@@ -16,4 +18,19 @@ body {
     background-position: center;
 
     height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.content {
+    margin: 32px 30px 18px 30px;
+}
+
+.topSection {
+    color: var(--grey900);
+}
+
+.middleSection {
+    margin-top: 24px;
+    color: var(--grey500);
 }
