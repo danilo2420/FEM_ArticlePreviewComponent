@@ -23,11 +23,34 @@ function setEventListeners() {
     darkIcon.addEventListener('click', (event) => {
         togglePopUp();
     })
+
+    // This turns off the pop up to avoid problems when resizing
+    window.onresize = () => {
+        turnPopupOff();
+    }
 }
 
-// This just toggles the style of the light icon when used for turning both on and off
-// let iconIsLight = true; // Initialized as light
-function toggleLightIcon() {
+var isPopUpOn = false; // Tracks the state of the popup - initializes as false
+function togglePopUp() {
+    isPopUpOn = !isPopUpOn;
+    if (screen.width < 650) { // Small screens
+        togglePopUpForSmallScreens(true);
+    } else { // Medium and large screens
+        togglePopUpForBigScreens(true);
+    }
+}
+
+function togglePopUpForSmallScreens() {
+    if (isPopUpOn) {
+        bottomSection.style.display = 'none';
+        socialMediaSection.style.display = 'flex';
+    } else {
+        bottomSection.style.display = 'flex';
+        socialMediaSection.style.display = 'none';
+    }
+}
+
+function togglePopUpForBigScreens() {
     lightIcon.classList.toggle('darkIconContainer');
 
     if (isPopUpOn) {
@@ -37,37 +60,19 @@ function toggleLightIcon() {
         iconImage.src = 'images/icon-share.svg';
         popUp.style.display = 'none';
     }
-
-    //iconIsLight = !iconIsLight;
 }
 
-function resize() {
-    // I'll have to do stuff here so that things don't get messed up
-}
+function turnPopupOff() {
+    if (screen.width < 600) {
+        bottomSection.style.display = 'flex';
+        socialMediaSection.style.display = 'none';
+    } else {
+        lightIcon.classList.remove('darkIconContainer');
 
-function togglePopUp() {
-    isPopUpOn = !isPopUpOn;
-    makePopupAppear(isPopUpOn);
-}
-
-var isPopUpOn = false;
-function makePopupAppear(b) {
-    if (b) { // Show pop up
-        if (screen.width < 650) { // Small screens
-            bottomSection.style.display = 'none';
-            socialMediaSection.style.display = 'flex';
-        } else { // Medium and large screens
-            toggleLightIcon(true);
-        }
-    } else { // Hide pop up
-        if (screen.width < 650) { // Small screens
-            bottomSection.style.display = 'flex';
-            socialMediaSection.style.display = 'none';
-        } else { // Medium and large screens
-            toggleLightIcon(false);
-        }
+        iconImage.src = 'images/icon-share.svg';
+        popUp.style.display = 'none';
     }
-    isPopUpOn = b;
+    isPopUpOn = false;
 }
 
 main();
