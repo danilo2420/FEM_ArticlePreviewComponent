@@ -10,6 +10,8 @@ body {
     border-radius: 10px;
 
     box-shadow: 0px 40px 40px #C9D5E1;
+
+    transition: all 0.3s ease-in-out;
 }
 
 .image {
@@ -77,6 +79,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: all 0.2s;
+    cursor: pointer;
 }
 
 .icon {
@@ -107,11 +112,19 @@ body {
 
 .shareText {
     color: var(--grey400);
+    cursor: pointer;
+    transition: all 0.2s;
 }
 
 .shareIcons {
     display: flex;
     gap: 16px;
+
+    cursor: pointer;
+}
+
+.shareIcon {
+    transition: all 0.2s;
 }
 
 .darkIconContainer {
@@ -128,4 +141,27 @@ body {
 
 .popUp {
     display: none;
+    cursor: default;
+}
+
+/* Effects */
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 40px 40px #b8c3ce;
+}
+
+.iconContainer:hover {
+    background-color: #d6dce2;
+}
+
+.darkIconContainer:hover {
+    background-color: #5e6e83;
+}
+
+.shareIcon:hover {
+    transform: scale(1.1);
+}
+
+.shareText:hover {
+    transform: scale(1.1);
 }
