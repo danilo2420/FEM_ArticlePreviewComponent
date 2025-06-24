@@ -1,7 +1,7 @@
 @import 'style.css';
 @media (min-width: 650px) {
     body {
-        border: solid 2px orange;
+        /*border: solid 2px orange;*/
     }
 
     .container {
@@ -52,7 +52,6 @@
         position: absolute;
         height: 17px;
         width: 17px;
-        background-color: red;
 
         transform: rotate(45deg);
         background-color: var(--grey900);

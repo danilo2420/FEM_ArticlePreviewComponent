@@ -1,0 +1,11 @@
+@import 'styleTablet.css';
+
+@media (min-width: 900px) {
+    .container {
+        width: 700px;
+    }
+
+    .bottomSection {
+        margin-top: 25px;
+    }
+}
