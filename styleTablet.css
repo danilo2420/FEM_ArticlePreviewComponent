@@ -1,5 +1,4 @@
 @import 'style.css';
-
 @media (min-width: 650px) {
     body {
         border: solid 2px orange;
@@ -40,8 +39,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-
-        /* Initially invisible */ 
+ 
         display: none;
     }
 
